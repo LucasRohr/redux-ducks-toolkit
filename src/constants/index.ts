@@ -1,0 +1,9 @@
+export enum STACKS_NAMES {
+  MAIN_STACK = 'MainStack',
+}
+
+export {MAIN_STACK} from './stacks';
+
+export const STACKS = {
+  MAIN_STACK,
+};
