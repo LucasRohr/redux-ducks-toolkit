@@ -7,6 +7,10 @@ import {reducers} from './modules';
 
 const store = configureStore({
   reducer: reducers,
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 const persistor = persistStore(store);

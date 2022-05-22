@@ -34,7 +34,7 @@ export function AppContainer(): React.ReactElement | null {
         }}
         onReady={onNavigationReady}
         onStateChange={onStateChange}>
-        <RootStack.Navigator mode="modal" screenOptions={{headerShown: false}}>
+        <RootStack.Navigator screenOptions={{headerShown: false}}>
           <RootStack.Screen
             component={MainStack}
             name={STACKS_NAMES.MAIN_STACK}
