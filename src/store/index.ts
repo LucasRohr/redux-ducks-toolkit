@@ -3,9 +3,10 @@ import {persistStore, Persistor} from 'redux-persist';
 import {configureStore} from '@reduxjs/toolkit';
 
 import type {RootStateInterface} from './types';
+import {reducers} from './modules';
 
 const store = configureStore({
-  reducer: {},
+  reducer: reducers,
 });
 
 const persistor = persistStore(store);
